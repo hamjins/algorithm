@@ -15,6 +15,7 @@ typedef struct node {
 	double lon, lat;
 	vector<pair<vector<node>::iterator, double>> edge;
 }node;
+//overriding 하고싶었는데 이거 함수포인터 써야하는걸 망각하고 있었음
 bool sCmp(node& a, node& b) {
 	return a.place < b.place;
 }
