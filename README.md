@@ -2,10 +2,9 @@
 # algorithm 2018 in Pukyong National University!
 *********************************************************************
 
-**HI THERE!** I'm HJ LIM. This is my personal place, so I'll post the algorithm code here.
+**HI THERE!** I'm LIM. This is my personal place, so I'll post the algorithm code here.
 If you find errors in my code, just send me an email. Feedback to improve my code is also good.
 
-~~깃헙 넘모잼다~~
 
 
 ### THX FOR ALWAYS
