@@ -21,10 +21,10 @@ int main() {
 int ans(int n, int W) {
 	int *dp = new int[W + 1];
 	memset(dp, 0, sizeof(dp));
-
+	
 	for (int i = 0; i <= W; i++) {
-		for (int j = 0; j <= n; j++) {
-			if (j <= i) dp[i] = max(dp[i], dp[i - j] + v[j]);
+		for (int w = 0; w <= n; w++) {
+			if (w <= i) dp[i] = max(dp[i], dp[i - w] + v[w]);
 		}
 	}
 	return dp[W];
