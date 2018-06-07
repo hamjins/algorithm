@@ -31,12 +31,10 @@ void input(ifstream& in) {
 
 //Optimal Substructure
 void ans(int n) {
-	for (int i = 1; i <= N; i++) {
-		for (int j = 1; j <= N; j++) s[i][j] = 0;
-	}
+	for (int i = 1; i <= n; i++) s[1][i] = 1;
 	for (int i = 1; i <= n; i++) m[i][i] = 0;
 	for (int r = 1; r <= n - 1; r++) { //n-1
-		for (int i = 1; i <= n - r; i++) { //°¢ ´ë°¢¼±ÀÇ °ªÀÇ °³¼ö
+		for (int i = 1; i <= n - r; i++) { //Â°Â¢ Â´Ã«Â°Â¢Â¼Â±Ã€Ã‡ Â°ÂªÃ€Ã‡ Â°Â³Â¼Ã¶
 			int j = i + r; //col
 			m[i][j] = m[i + 1][j] + p[i - 1] * p[i] * p[j];
 			for (int k = i + 1; k <= j - 1; k++) {
