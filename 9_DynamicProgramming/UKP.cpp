@@ -22,8 +22,8 @@ int ans(int n, int W) {
 	int *dp = new int[W + 1];
 	memset(dp, 0, sizeof(dp));
 	
-	for (int i = 0; i <= W; i++) {
-		for (int w = 0; w <= n; w++) {
+	for (int i = 1; i <= W; i++) {
+		for (int w = 1; w <= n; w++) {
 			if (w <= i) dp[i] = max(dp[i], dp[i - w] + v[w]);
 		}
 	}
