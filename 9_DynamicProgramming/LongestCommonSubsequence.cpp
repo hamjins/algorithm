@@ -13,6 +13,7 @@ int ans(int, int);
 void print();
 
 int main() {
+	ios_base::sync_with_stdio(false);
 	cin >> str1 >> str2;
 	cout << ans(str2.length(), str1.length()) << "\n";
 	print();
