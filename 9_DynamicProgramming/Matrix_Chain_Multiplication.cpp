@@ -60,13 +60,15 @@ void print() {
 				dst = j; break;
 			}
 		}
-		vec[dst][1]++;
+		if (dst == cur + 1) vec[cur + 1][0]--;
+		else vec[dst][1]++;
 		for (int k = cur; k >= 1; k--) {
 			if (vec[k][0] != 0 || k == 1) {
 				src = k; break;
 			}
 		}
-		vec[src][0]++;
+		if (cur == src) vec[cur][1]--;
+		else vec[src][0]++;
 	}
 
 	for (int i = 1; i <= N; i++) {
